@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Rokkitt', serif;
+}
+
+body { 
+    font-size: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+header.header-utama {
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px 10%;
+    background-color: rgba(119, 151, 255, 0.89);
+    border-bottom: 1px solid #f73434;
+    position: relative;
+}
+
+header.header-utama .logoyt {
+    font-size: 34px;
+    color: #000000;
+    font-weight: 600;
+}
+
+header.header-utama .logoyt span{
+    color: #ff6a6a;
+    font-style: italic;
+}
+
+header.header-utama nav.listmenu ul{
+    display: flex;
+}
+
+header.header-utama nav.listmenu ul li a{
+    font-size: 20px;
+    font-weight: 500;
+    color: #ffffff;
+    margin-left: 40px;
+}
+
+header.header-utama .listmenu a:hover {
+    background-color: #ff6a6a;
+    color: #ffffff;
+}
+
+header.header-utama .listmenu a.active{
+    color: #000000;
+}
+
+header.header-utama .logo img {
+    width: 120px;
+}
+
+main{
+    padding: 2rem 0;
+    max-width: 100vw;    
+    align-items: center;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    justify-content: center; 
+    flex-direction: column;  
+}
+
+main section{
+    max-width: 90vw;
+    flex: 1;
+}
+
+main.hero .main-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+main.hero .main-content h4{
+    font-size: 50px;
+}
+
+main.hero .main-content p{
+    font-size: 20px;
+    font-weight: 400;
+    width: 620px;
+    max-width: 100%;
+    color: #000000;
+    line-height: 30px;
+    margin-bottom: 15px;
+}
+
+main.hero .main-content .btn{
+    display: inline-block;
+    padding: 11px 26px;
+    background: #8f0909;
+    color: #ffffff;
+    border: 2px solid #8f0909;
+    border-radius: 8px;
+}
+
+article{
+    flex: 1;
+}
+.main-image{
+    flex: 1;
+}
+
+main.hero .main-content .main-image h3{
+    text-align: center;
+}
+
+main.hero .main-content .main-image .img-fluid{
+    max-width: 37vw;
+}
+
+main.hero .main-content .main-image aside{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0px 10vw;
+}
+
+main.hero .main-content .main-image aside .card{
+    text-align: center;
+    flex: 1 ;
+}
+
+
+main.hero .main-content .main-image aside .card img{
+    border-radius: 50%;
+    box-shadow: 1px 1px 5px 2px rgba(0,0,0,0.10);
+    max-width: 60px;
+    max-height: 60px;
+}
+
+main.hero .main-action{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 90vw;
+    flex: 1;
+    margin-bottom: 5rem;
+}
+
+.scroll{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+main.hero .main-action h4{
+    font-size: 50px;
+    text-align: center;
+}
+
+main.hero .main-action p{
+    font-size: 20px;
+    font-weight: 400;
+    width: 620p;
+    max-width: 100%;
+    color: #000000;
+    line-height: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+main.hero .main-action article{
+    flex: 1;
+}
+main.hero .main-action .article-image{
+    flex: 1;
+    display: flex;
+    margin-top: 3rem;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+}
+
+main.hero .main-action .article-image .card{
+    flex: 1;
+}
+
+.card:hover{
+    transform: rotate3d(-1,1,0,20deg);
+}
+
+main.hero .main-action .article-image .card .overly{
+    background-color: rgba(143, 143, 143, 0.89);
+    margin: 1rem;
+    border-radius: 20px;
+} 
+
+main.hero .main-action .article-image .overly h3{
+    color: #000000;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+}
+
+main.hero .main-action .article-image .overly p{
+    font-size: 20px;
+    text-align: center;
+}
+
+main.hero .main-action .article-image .img-content{
+    max-width: 30vw;
+}
+
+main.hero .main-action .article-image .img-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0px 2vw;
+}
+
+main.hero .main-content .article-image .card{
+    text-align: center;
+    flex: 1 ;
+}
+
+main.hero .main-content .article-image .card img{
+    border-radius: 50%;
+    box-shadow: 1px 1px 5px 2px rgba(0,0,0,0.10);
+    max-width: 60px;
+    max-height: 60px;
+}
+
+footer{
+    display: flex;
+    font-size: 20px;
+    color: #000000;
+    font-weight: 600;
+    justify-content: center;
+    background-color: rgba(86, 112, 199, 0.89);
+}
+
+
+@media(max-width: 768px){
+    header.header-utama{
+        flex-direction: column;
+    }
+
+    header.header-utama listmenu ul{
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    main{
+        padding: 1rem 3rem;
+    }
+
+    main .main-content{
+        flex-direction: column;
+        gap: 2rems;
+    }
+}
+
+
+
+
+
+
+
+
